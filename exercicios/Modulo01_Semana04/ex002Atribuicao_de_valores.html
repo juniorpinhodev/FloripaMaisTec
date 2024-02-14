@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribuição de valores</title>
+</head>
+<body>
+    <h1>Atribuição de valores</h1>
+    <p><strong>Digite um número:</strong></p>
+    
+    <input type="number" id="numero">
+    <button onclick="enviar()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function enviar() {
+            
+            const numero = parseInt(document.getElementById("numero").value);
+
+            console.log("O número digitado foi:", numero);
+
+            document.getElementById("resultado").innerHTML = "O número digitado foi: " + numero;
+        }
+    </script>
+
+</body>
+</html>
+
