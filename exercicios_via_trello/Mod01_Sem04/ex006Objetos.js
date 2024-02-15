@@ -1,18 +1,20 @@
-let pessoa1 = {
+// Crie 3 objetos com propriedades representando informações pessoais (nome, idade, nacionalidade e profissão) e exiba essas informações com um console.log para cada objeto.
+
+  const pessoa1 = {
     nome: "José",
     idade: 30,
     nacionalidade: "Brasileiro",
     profissao: "Desenvolvedor Backend"
   };
   
-  let pessoa2 = {
+  const pessoa2 = {
     nome: "Letícia",
     idade: 25,
     nacionalidade: "Brasileira",
     profissao: "Desenvolvedora Frontend"
   };
   
-  let pessoa3 = {
+  const pessoa3 = {
     nome: "Nicolas",
     idade: 35,
     nacionalidade: "Brasileiro",

@@ -1,3 +1,5 @@
+// Crie uma função que receba dois números como parâmetros e retorne sua soma no console.log.
+
 function soma(a, b) {
 
     let resultado = a + b;
