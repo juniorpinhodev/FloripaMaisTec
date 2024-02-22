@@ -1,0 +1,25 @@
+/* Crie um arquivo CSS chamado styles.css e adicione um estilo básico para o cabeçalho, o conteúdo principal e o rodapé */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  
+  main {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
