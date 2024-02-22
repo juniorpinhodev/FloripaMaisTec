@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    border:0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #304fd6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+}
+
+footer {
+    background-color: #304fd6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.perfil-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoes-usuario {
+    list-style-type: none; /* Remove os marcadores de bolinha */
+}
