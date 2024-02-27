@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Perfil do Usuário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Perfil do Usuário</title>
 </head>
 <body>
 
-    <header>
-        <h1>Perfil do Usuário</h1>
-    </header>
-    <main>
-        <section class="perfil-usuario">
-            <img src="assets/usuario.png" alt="Foto do Usuário" class="foto" width="100">
-            <h2>Nome do Usuário</h2>
-            <p>Descrição do Usuário</p>
-            <ul class="informacoes-usuario">
-                
-                <li><span class="titulo">Email:</span> email@exemplo.com</li>
-                <li><span class="titulo">Telefone:</span> (48) 99999-9999</li>
-                <li><span class="titulo">Endereço:</span> Rua Exemplo, 123</li>
-            </ul>
-        </section>
-    </main>
-<footer>
-<p>Copyright &copy; 2024 Jedir de Oliveira Pinho Junior - Turma Fitness - Floripa Mais Tec</p>
-</footer>
+  <header>
+    <h1>Perfil do Usuário</h1>
+  </header>
+  <main>
+    <section class="perfil-usuario">
+      <img src="assets/usuario.png" alt="Foto do Usuário" class="foto" width="100">
+      <h2 class="nome-usuario">Nome do Usuário</h2>
+      <p class="descricao-usuario">Descrição do Usuário</p>
 
-<script src="main.js"></script>
+      <ul class="informacoes-usuario">
+        <li>
+          <span class="titulo">Email:</span>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </li>
+        <li>
+          <span class="titulo">Telefone:</span>
+          <input type="tel" id="telefone" name="telefone" placeholder="(48) 9-9999-9999" pattern="[0-9]{11}" required>
+        </li>
+        <li>
+          <span class="titulo">Endereço:</span>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua" required>
+        </li>
+      </ul>
+
+      <div class="botoes-acao">
+        <button class="botao editar">Editar Perfil</button>
+        <button class="botao senha">Alterar Senha</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2024 Jedir de Oliveira Pinho Junior - Turma Fitness - Floripa Mais Tec</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

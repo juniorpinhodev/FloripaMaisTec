@@ -1,35 +1,113 @@
-*{
+* {
     padding: 0;
-    border:0;
+    border: 0;
     font-family: Arial, sans-serif;
-}
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333333;
+  }
 
-header {
+  header, footer {
     background-color: #304fd6;
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-main {
+  }
+  
+  main {
     background-color: #fff;
     padding: 20px;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #304fd6;
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-.perfil-usuario {
+  }
+  
+  .perfil-usuario {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .foto {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .foto:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  .nome-usuario {
+    color: blue;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .descricao-usuario {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .informacoes-usuario {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .informacoes-usuario li {
+    flex: 1 1 33%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+  }
 
-.informacoes-usuario {
-    list-style-type: none; /* Remove os marcadores de bolinha */
-}
+  .titulo {
+    font-weight: bold;
+  }
+  
+  .botoes-acao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .botao {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #333333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .botao:hover {
+    background-color: #304fd6;
+    color: #fff;
+  }
+  
+  .editar {
+    background-color: #fff;
+  }
