@@ -63,15 +63,14 @@ body {
   }
 
   .left h1 span {
-    color: #FFBF00; /* Define a cor como amarelo */
-    display: inline-block; /* Permite definir largura e altura */
-    width: 10px; /* Define a largura do ponto final */
-    height: 10px; /* Define a altura do ponto final */
-    margin-left: 4px; /* Cria espaço entre o texto e o ponto final */
-    background-color: #FFBF00; /* Define a cor de fundo como amarelo */
+    color: #FFBF00; 
+    display: inline-block;
+    width: 10px; 
+    height: 10px; 
+    margin-left: 4px; 
+    background-color: #FFBF00; 
   }
   
-
   .left button {
     padding: 24px 46px;
     font-size: 24px;
