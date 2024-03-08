@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+  nav {
+    display: flex;
+    margin: 1.5%;
+    margin-right: 9%;
+  }
+
+  nav a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+  }
+
+  .left {
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-left: 10%;
+    margin-right: 4%;
+    margin-top: 10%; 
+  }
+
+  .left h1 {
+    display: inline;
+    font-size: 80px;
+    margin-top: 20%; 
+  }
+  
+  .left p {
+    font-size: 30px;
+  }
+
+  .left h1 span {
+    color: #FFBF00; /* Define a cor como amarelo */
+    display: inline-block; /* Permite definir largura e altura */
+    width: 10px; /* Define a largura do ponto final */
+    height: 10px; /* Define a altura do ponto final */
+    margin-left: 4px; /* Cria espaço entre o texto e o ponto final */
+    background-color: #FFBF00; /* Define a cor de fundo como amarelo */
+  }
+  
+
+  .left button {
+    padding: 24px 46px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #FFBF00;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: auto;
+  }
+
+  .right {
+    flex: 1;
+    background-image: url('img/imgbike.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10%;
+  }
+
+  @media(max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .left, .right {
+      flex: none;
+    }
+
+  }
