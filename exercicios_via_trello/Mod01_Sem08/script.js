@@ -1,5 +1,8 @@
 // Seleciona o elemento pelo ID
-let elemento = document.getElementById("meuElemento");
+let myDiv = document.getElementById('myDiv');
+        
+// Remove o atributo 'data-custom'
+myDiv.removeAttribute('data-custom');
 
-// Adiciona o novo atributo ao elemento
-elemento.setAttribute("data-novo-atributo", "valor-do-atributo");
+// Verifica se o atributo foi removido
+console.log(myDiv.getAttribute('data-custom')); 
