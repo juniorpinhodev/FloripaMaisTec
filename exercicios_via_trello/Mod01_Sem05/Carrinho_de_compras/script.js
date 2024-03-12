@@ -10,7 +10,7 @@ const produtos = {
 };
 
 // Carrinho de compras do usuário
-let carrinho = [];
+let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 function consultarPreco() {
     const produtoInput = document.getElementById('produto').value.toLowerCase();
@@ -26,6 +26,7 @@ function comprarProduto() {
     const produtoInput = document.getElementById('produto').value.toLowerCase();
     if (produtos.hasOwnProperty(produtoInput)) {
         carrinho.push({ nome: produtoInput, preco: produtos[produtoInput] });
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
         alert(`Produto "${produtoInput}" adicionado ao carrinho.`);
         atualizarTotal();
         atualizarQuantidade();
@@ -58,3 +59,7 @@ function atualizarTotal() {
 function atualizarQuantidade() {
     document.getElementById('quantidade-value').innerText = carrinho.length;
 }
+
+// Inicialização da aplicação
+atualizarTotal();
+atualizarQuantidade();
