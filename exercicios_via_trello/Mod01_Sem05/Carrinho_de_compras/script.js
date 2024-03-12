@@ -28,6 +28,7 @@ function comprarProduto() {
         carrinho.push({ nome: produtoInput, preco: produtos[produtoInput] });
         alert(`Produto "${produtoInput}" adicionado ao carrinho.`);
         atualizarTotal();
+        atualizarQuantidade();
     } else {
         alert(`Produto "${produtoInput}" não encontrado.`);
     }
@@ -52,4 +53,8 @@ function atualizarTotal() {
         total += item.preco;
     });
     document.getElementById('total-value').innerText = total.toFixed(2);
+}
+
+function atualizarQuantidade() {
+    document.getElementById('quantidade-value').innerText = carrinho.length;
 }
