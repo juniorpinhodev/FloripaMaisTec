@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Tarefas</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="myDiv" class="example" data-custom="123">Hello, Floripa Mais Tec!</div>
-
-    <script src="script.js"></script>
+<div class="container">
+  <h1>Lista de Tarefas</h1>
+  <div class="form">
+    <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+    <button onclick="addTask()">Adicionar</button>
+  </div>
+  <ul id="taskList"></ul>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
