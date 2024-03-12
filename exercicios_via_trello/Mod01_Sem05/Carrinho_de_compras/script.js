@@ -6,6 +6,10 @@ const produtos = {
     "café": 7.50
 };
 
+
+// Carrinho de compras do usuário
+let carrinho = [];
+
 function consultarPreco() {
     const produtoInput = document.getElementById('produto').value.toLowerCase();
     if (produtos.hasOwnProperty(produtoInput)) {
@@ -19,9 +23,9 @@ function consultarPreco() {
 function comprarProduto() {
     const produtoInput = document.getElementById('produto').value.toLowerCase();
     if (produtos.hasOwnProperty(produtoInput)) {
-        alert(`Produto "${produtoInput}" comprado com sucesso por R$ ${produtos[produtoInput].toFixed(2)}!`);
+        carrinho.push({ nome: produtoInput, preco: produtos[produtoInput] });
+        alert(`Produto "${produtoInput}" adicionado ao carrinho.`);
     } else {
         alert(`Produto "${produtoInput}" não encontrado.`);
     }
 }
-cd
