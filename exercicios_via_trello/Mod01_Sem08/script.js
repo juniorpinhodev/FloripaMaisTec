@@ -9,15 +9,11 @@ for (let i = 0; i < elementos.length; i++) {
     elementos[i].textContent = "Novo texto do elemento " + (i + 1);
 }
 
+// Seleciona o elemento pai
+let elementoPai = document.getElementById("meuElemento");
 
-// Cria um novo elemento <p>
-var novoElemento = document.createElement("p");
+// Seleciona o elemento filho que deseja remover
+let elementoFilho = elementoPai.querySelector("p"); // Supondo que o elemento filho seja um parágrafo (<p>)
 
-// Adiciona texto ao novo elemento
-novoElemento.textContent = "Este é um novo parágrafo";
-
-// Seleciona o elemento pai 
-var elementoPai = document.getElementById("meuElemento");
-
-// Adiciona o novo elemento como filho do elemento pai
-elementoPai.appendChild(novoElemento);
+// Remove o elemento filho do elemento pai
+elementoPai.removeChild(elementoFilho);
