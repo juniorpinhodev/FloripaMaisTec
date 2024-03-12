@@ -6,7 +6,7 @@ const produtos = {
     "café": 7.50,
     "leite": 3.49,
     "pão": 5.50,
-    
+    "biscoito": 2.80,
 };
 
 // Carrinho de compras do usuário
@@ -27,6 +27,7 @@ function comprarProduto() {
     if (produtos.hasOwnProperty(produtoInput)) {
         carrinho.push({ nome: produtoInput, preco: produtos[produtoInput] });
         alert(`Produto "${produtoInput}" adicionado ao carrinho.`);
+        atualizarTotal();
     } else {
         alert(`Produto "${produtoInput}" não encontrado.`);
     }
@@ -43,4 +44,12 @@ function calcularTotal() {
     } else {
         document.getElementById('total').innerText = 'Carrinho vazio';
     }
+}
+
+function atualizarTotal() {
+    let total = 0;
+    carrinho.forEach(item => {
+        total += item.preco;
+    });
+    document.getElementById('total-value').innerText = total.toFixed(2);
 }
