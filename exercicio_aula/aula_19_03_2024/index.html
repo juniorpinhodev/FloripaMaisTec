@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer de 5 segundos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="timer">Tempo restante: 0</div>
+        <button onclick="iniciarTimer()">Iniciar Timer</button>
+    </div>
+
+    <script>
+        let tempoRestante = 5;
+
+        function atualizarTimer() {
+            document.getElementById('timer').textContent = `Tempo restante: ${tempoRestante}`;
+        }
+
+        function mostrarAlerta() {
+            window.alert('Tempo esgotado!');
+        }
+
+        function iniciarTimer() {
+            atualizarTimer();
+
+            const timerInterval = setInterval(() => {
+                tempoRestante--;
+
+                if (tempoRestante === 0) {
+                    mostrarAlerta();
+                    clearInterval(timerInterval);
+                } else {
+                    atualizarTimer();
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Colorir DIV</title>
+
+</head>
+<body>
+
+<div class="div-colorida" onclick="colorirDiv(this)">Clique em mim para colorir</div>
+
+<script>
+    function colorirDiv(elemento) {
+        elemento.style.backgroundColor = 'lightblue';
+        elemento.style.width = '400px';
+        elemento.style.height = '200px';
+        elemento.style.textAlign = 'center';
+        elemento.innerText = 'Texto centralizado';
+    }
+</script>
+
+</body>
+</html>
